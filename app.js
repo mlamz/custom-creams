@@ -1,6 +1,10 @@
 var express = require('express')
 ,	port = process.env.PORT || 3000
-,	twitter = require('ntwitter');
+,	FeedParser = require('feedparser')
+,	parser = new FeedParser()
+,	request = require('request')
+,	twitterRssFeed
+;
 
 var app = express.createServer();
 
@@ -13,17 +17,14 @@ app.configure(function() {
 	app.set('view engine', 'jade');
 });
 
-var twit = new twitter({
-	consumer_key: 'FaDwwAlb9Fmjc762nvrUA',
-	consumer_secret: process.env.TWITTER_CONSUMER_SECRET,
-	access_token_key: '605355787-7sGCezgRFDlaFsgGcMunDmae4blidlMA6GmCvIk9',
-	access_token_secret: process.env.TWITTER_ACCESS_TOKEN_SECRET
-});
+parser.on('article', function (article){
+      console.log(JSON.stringify(article.title));
+      console.log(JSON.stringify(article.pubDate));
+    });
 
-
-twit.verifyCredentials(function (err, data) {
-        console.log(data);
-});
+twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' };
+    
+request(twitterRssFeed).pipe(parser.stream);
 
 app.get('/', function(request, response){
 	response.render("index");

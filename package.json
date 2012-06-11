@@ -6,6 +6,7 @@
   "dependencies" : {
     "express" : "2.5.8",
     "jade" : "0.25.0",
-    "ntwitter" : "0.3.0"
+    "request" : "2.9.202",
+    "feedparser" : "0.9.9"
   }
 }

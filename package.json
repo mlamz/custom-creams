@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "dependencies" : {
     "express" : "2.5.8",
-    "jade" : "0.25.0"
+    "jade" : "0.25.0",
+    "ntwitter" : "0.3.0"
   }
 }

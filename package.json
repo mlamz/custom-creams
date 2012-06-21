@@ -3,10 +3,11 @@
   "description": "the custom creams site",
   "author": "Michael Lam <michael@michaellam.co.uk>",
   "version": "0.0.1",
-  "dependencies" : {
-    "express" : "2.5.8",
-    "jade" : "0.25.0",
-    "request" : "2.9.202",
-    "feedparser" : "0.9.9"
+  "dependencies": {
+    "express": "2.5.8",
+    "jade": "0.25.0",
+    "request": "2.9.202",
+    "feedparser": "0.9.9",
+    "moment": "~1.6.2"
   }
 }

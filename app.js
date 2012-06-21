@@ -3,6 +3,7 @@ var express = require('express')
 ,	FeedParser = require('feedparser')
 ,	parser = new FeedParser()
 ,	request = require('request')
+,	moment = require('moment')
 ,	twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' }
 ,	homeViewModel = { twitterFeed: [] }
 ;
@@ -20,7 +21,9 @@ app.configure(function() {
 
 
 parser.on('article', function (article){
-	homeViewModel.twitterFeed.push([JSON.stringify(article.pubDate),JSON.stringify(article.title)]);
+	var date = moment(JSON.stringify(article.pubDate), "YYYY-MM-DDTHH:mm.ss.SSSZ");
+
+	homeViewModel.twitterFeed.push([date.format("dddd, MMMM Do YYYY"),JSON.stringify(article.title)]);
     });
 
 

@@ -1,0 +1,7 @@
+body{
+background-image:
+	-webkit-gradient(linear, left top, right top,
+		color-stop(0.5, #232227),
+		color-stop(0.5, #efefe7));
+	-webkit-background-size: 100px 100px;
+}

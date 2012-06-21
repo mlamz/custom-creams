@@ -3,7 +3,8 @@ var express = require('express')
 ,	FeedParser = require('feedparser')
 ,	parser = new FeedParser()
 ,	request = require('request')
-,	twitterRssFeed
+,	twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' }
+,	homeViewModel = { twitterFeed: [] }
 ;
 
 var app = express.createServer();
@@ -17,17 +18,18 @@ app.configure(function() {
 	app.set('view engine', 'jade');
 });
 
+
 parser.on('article', function (article){
-      console.log(JSON.stringify(article.title));
-      console.log(JSON.stringify(article.pubDate));
+	homeViewModel.twitterFeed.push([JSON.stringify(article.pubDate),JSON.stringify(article.title)]);
     });
 
-twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' };
-    
-request(twitterRssFeed).pipe(parser.stream);
 
-app.get('/', function(request, response){
-	response.render("index");
+app.get('/', function(req, res){
+	homeViewModel.twitterFeed = [];
+	request(twitterRssFeed, function(error, twitterResponse, body){
+		res.render("index", homeViewModel);
+	}).pipe(parser.stream);
+
 });
 
 app.listen(port);

@@ -1,7 +1,16 @@
 body{
-background-image:
-	-webkit-gradient(linear, left top, right top,
-		color-stop(0.5, #232227),
-		color-stop(0.5, #efefe7));
+	background-image:
+		-webkit-gradient(linear, left top, right top,
+			color-stop(0.5, #232227),
+			color-stop(0.5, #efefe7));
 	-webkit-background-size: 100px 100px;
+	font-family: Verdana, Helvetica;
+}
+
+#page{
+	width: 800px;
+	min-height: 500px;
+	background-color: #efefe7;
+	opacity: 0.9;
+	margin:40px auto;
 }

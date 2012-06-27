@@ -55,3 +55,10 @@ ul.nav-buttons li{
 .up3{
 	margin-top:-3px;
 }
+#blue-burst-home{
+	display: none;
+	z-index: -20;
+	left: 249px;
+	top: -62px;
+	position: relative;
+}

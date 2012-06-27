@@ -16,10 +16,42 @@ body{
 }
 #logo{
 	float:left;
+	margin-left: 30px;
+	margin-top: 5px;
 }
 #navigation{
 	float:left;
 }
 .clear{
 	clear:both;
+}
+ul, li {
+    list-style-type: none;
+}
+ul.nav-buttons{
+	margin-top: 120px;
+}
+ul.nav-buttons li{
+	padding: 2px;
+}
+.left{
+	float: left;
+}
+.down1{
+	margin-top:1px;
+}
+.down2{
+	margin-top:2px;
+}
+.down3{
+	margin-top:3px;
+}
+.up1{
+	margin-top:-1px;
+}
+.up2{
+	margin-top:-2px;
+}
+.up3{
+	margin-top:-3px;
 }

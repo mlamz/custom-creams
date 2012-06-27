@@ -13,6 +13,10 @@ body{
 	background-color: #efefe7;
 	opacity: 0.9;
 	margin:40px auto;
+	border: solid 8px #ffffff;
+	padding: 5px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
 }
 #logo{
 	float:left;

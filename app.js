@@ -32,8 +32,11 @@ app.get('/', function(req, res){
 	request(twitterRssFeed, function(error, twitterResponse, body){
 		res.render("index", homeViewModel);
 	}).pipe(parser.stream);
-
 });
+
+app.get('/our-story', function(req, res){
+		res.render("our-story");
+	});
 
 app.listen(port);
 console.log("listening on port " + port);

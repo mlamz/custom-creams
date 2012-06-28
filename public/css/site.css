@@ -17,6 +17,7 @@ body{
 	padding: 5px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
+	z-index: -30;
 }
 #logo{
 	float:left;
@@ -37,6 +38,13 @@ ul.nav-buttons{
 }
 ul.nav-buttons li{
 	padding: 2px;
+}
+li a{
+	text-decoration: none;
+	font-size: 17px;
+}
+li a:visited{
+	color: Black;
 }
 .left{
 	float: left;
@@ -88,4 +96,45 @@ b{
 	font-weight: 500;
 	font-size: 20px;
 	color: #444444;
+}
+.twitter-box{
+	font-size: 12px;
+
+	width: 417px;
+	float:left;
+}
+.video-box{
+	height: 400px;
+	background-color: Black;
+	margin-top: -10px;
+	z-index: 50;
+}
+.box{
+	border: solid 6px #ffffff;
+	padding: 5px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	margin-bottom:15px;
+}
+.intro-box{
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	width: 300px;
+	float:left;
+}
+h1{
+	font-weight: 500;
+	font-size: 31px;
+	color: #333333;
+	margin-bottom: 5px;
+}
+.intro-brought{
+	font-style:italic;
+}
+.intro-brad{
+	margin-top:3px;
+	font-size: 27px;
+}
+.Home{
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+
 }

@@ -1,6 +1,23 @@
-- for (var i = 0; i < twitterFeed.length; i++) {
-	p
-		=twitterFeed[i][0]
-		span :
-		=twitterFeed[i][1]
-- }
+div.video-box.box
+
+
+
+
+div.intro-box
+	h1 Liquid nitrogen powered ice cream
+	div.intro-brought brought to you by 
+	div.intro-brad Bradley Smith
+
+div.twitter-box.box
+	h4 Our tweets
+	- for (var i = 0; i < twitterFeed.length; i++) {
+		p
+			span.twitter-box-date 
+				=twitterFeed[i][0]
+			span :
+			=twitterFeed[i][1]
+	- }
+
+
+
+div.clear

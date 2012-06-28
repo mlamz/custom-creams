@@ -61,13 +61,31 @@ ul.nav-buttons li{
 }
 .blue-burst-home{	
 	left: 249px;
-	top: -62px;
 }
 .blue-burst-our-story{	
 	left: 328px;
-	top: -62px;
+}
+.blue-burst-flavours{	
+	left: 415px;
+}
+.blue-burst-hire-us{	
+	left: 492px;
+}
+.blue-burst-sponsors{	
+	left: 574px;
 }
 #blue-burst{
 	position: relative;
 	z-index: -20;
+	top: -62px;
+}
+.content{
+	margin-top: -60px;
+	padding: 30px;
+}
+
+b{
+	font-weight: 500;
+	font-size: 20px;
+	color: #444444;
 }

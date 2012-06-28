@@ -38,5 +38,17 @@ app.get('/our-story', function(req, res){
 		res.render("our-story");
 	});
 
+app.get('/flavours', function(req, res){
+		res.render("flavours");
+	});
+
+app.get('/hire-us', function(req, res){
+		res.render("hire-us");
+	});
+
+app.get('/sponsors', function(req, res){
+		res.render("sponsors");
+	});
+
 app.listen(port);
 console.log("listening on port " + port);

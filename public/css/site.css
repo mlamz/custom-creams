@@ -39,10 +39,15 @@ ul.nav-buttons{
 ul.nav-buttons li{
 	padding: 2px;
 }
-li a{
+ul.nav-buttons li a{
 	text-decoration: none;
-	font-size: 17px;
-	border-bottom:1px dashed Black;
+	font-size: 20px;
+	color: #333333;
+	border-bottom:1px dashed #aaaaaa;
+	cursor: pointer;
+}
+ul.nav-buttons li a:hover{
+	color: #aaaaaa;
 }
 li a:visited{
 	color: Black;
@@ -142,5 +147,5 @@ h1{
 	color: #333333;
 }
 .Home{
-	font-family: 'Impact';
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }

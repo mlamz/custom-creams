@@ -10,14 +10,14 @@ body{
 #page{
 	width: 800px;
 	min-height: 500px;
-	background-color: #efefe7;
-	opacity: 0.9;
+	background-color: rgba(239,239,231,0.9);
 	margin:40px auto;
 	border: solid 8px #ffffff;
 	padding: 5px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	z-index: -30;
+	position: relative;
 }
 #logo{
 	float:left;
@@ -42,6 +42,7 @@ ul.nav-buttons li{
 li a{
 	text-decoration: none;
 	font-size: 17px;
+	border-bottom:1px dashed Black;
 }
 li a:visited{
 	color: Black;
@@ -99,9 +100,13 @@ b{
 }
 .twitter-box{
 	font-size: 12px;
-
 	width: 417px;
 	float:left;
+	background-color: White;
+	opacity: 1;
+	-moz-opacity: 1;
+	filter:alpha(opacity=1);
+	z-index: 50;
 }
 .video-box{
 	height: 400px;
@@ -133,8 +138,9 @@ h1{
 .intro-brad{
 	margin-top:3px;
 	font-size: 27px;
+	margin-left: 6px;
+	color: #333333;
 }
 .Home{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
-
+	font-family: 'Impact';
 }

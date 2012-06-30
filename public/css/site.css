@@ -16,7 +16,6 @@ body{
 	padding: 5px;
 	-moz-border-radius: 15px;
 	border-radius: 15px;
-	z-index: -30;
 	position: relative;
 }
 #logo{
@@ -34,20 +33,19 @@ ul, li {
     list-style-type: none;
 }
 ul.nav-buttons{
-	margin-top: 120px;
+	margin-top: 130px;
 }
 ul.nav-buttons li{
 	padding: 2px;
+	margin-right: 24px;
 }
 ul.nav-buttons li a{
 	text-decoration: none;
 	font-size: 20px;
 	color: #333333;
-	border-bottom:1px dashed #aaaaaa;
-	cursor: pointer;
 }
 ul.nav-buttons li a:hover{
-	color: #aaaaaa;
+	color: #009ade;
 }
 li a:visited{
 	color: Black;
@@ -92,9 +90,9 @@ li a:visited{
 	position: relative;
 	z-index: -20;
 	top: -62px;
+	display: none;
 }
 .content{
-	margin-top: -60px;
 	padding: 30px;
 }
 
@@ -146,6 +144,10 @@ h1{
 	margin-left: 6px;
 	color: #333333;
 }
-.Home{
+.nav{
 	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+.highlight{
+	border-bottom: 1px #009ade dashed;
+	font-weight: bold;
 }

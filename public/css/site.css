@@ -5,13 +5,14 @@ body{
 			color-stop(0.5, #efefe7));
 	-webkit-background-size: 100px 100px;
 	font-family: Verdana, Helvetica;
+	margin: 0;
 }
 
 #page{
 	width: 800px;
 	min-height: 500px;
 	background-color: rgba(239,239,231,0.9);
-	margin:40px auto;
+	margin:15px auto;
 	border: solid 8px #ffffff;
 	padding: 5px;
 	-moz-border-radius: 15px;
@@ -102,14 +103,16 @@ b{
 	color: #444444;
 }
 .twitter-box{
-	font-size: 12px;
-	width: 417px;
+	font-size: 13px;
+	width: 412px;
 	float:left;
-	background-color: White;
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=1);
+	background-color: rgba(239,239,231,0.6);
 	z-index: 50;
+	border: solid 4px #ffffff !important;
+	padding: 10px !important;
+}
+.twitter-box-date{
+	font-weight: bold;
 }
 .video-box{
 	height: 400px;

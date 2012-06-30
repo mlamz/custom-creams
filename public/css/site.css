@@ -131,18 +131,48 @@ b{
 }
 h1{
 	font-weight: 500;
-	font-size: 31px;
+	font-size: 33px;
 	color: #333333;
 	margin-bottom: 5px;
 }
+h1,h2,h3,h4,h5{
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+}
+h3{
+	font-size: 25px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 100;
+
+}
+h4{
+	font-size: 20px;
+	margin: 0;
+	font-weight: 100;
+}
+h5{
+	font-size: 18px;
+}
+
+hr { 
+	height: 0; 
+	border-style: dashed; 
+	border-width: 1px 0 0 0; 
+	border-color: #009ade; 
+	margin: 0;
+}
 .intro-brought{
 	font-style:italic;
+	margin-left: 12px;
+	color: #444444;
+	margin-top: -5px;
 }
 .intro-brad{
 	margin-top:3px;
-	font-size: 27px;
-	margin-left: 6px;
-	color: #333333;
+	font-size: 35px;
+	color: #777777;
+	font-weight: 100;
+	font-style: oblique
 }
 .nav{
 	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;

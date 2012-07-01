@@ -4,7 +4,9 @@ body{
 			color-stop(0.5, #232227),
 			color-stop(0.5, #efefe7));
 	-webkit-background-size: 100px 100px;
-	font-family: Verdana, Helvetica;
+	--font-family: Verdana, Helvetica;
+	font-size: 1.1em;
+	font-family: Georgia, Verdana, Helvetica;
 	margin: 0;
 }
 
@@ -99,11 +101,11 @@ li a:visited{
 
 b{
 	font-weight: 500;
-	font-size: 20px;
-	color: #444444;
+	font-size: 1.3em;
+	color: #555555;
 }
 .twitter-box{
-	font-size: 13px;
+	font-size: 0.9em;
 	width: 412px;
 	float:left;
 	background-color: rgba(239,239,231,0.6);
@@ -142,7 +144,7 @@ h1,h2,h3,h4,h5{
 	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
 }
 h3{
-	font-size: 25px;
+	font-size: 1.3em;
 	margin-top: 0;
 	margin-bottom: 0;
 	font-weight: 100;
@@ -175,7 +177,6 @@ hr {
 	font-size: 35px;
 	color: #777777;
 	font-weight: 100;
-	font-style: oblique
 }
 .nav{
 	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
@@ -183,4 +184,10 @@ hr {
 .highlight{
 	border-bottom: 1px #009ade dashed;
 	font-weight: bold;
+}
+.flavour-note{
+	font-style: italic;
+	font-size: 0.9em;
+	color: #009ade;
+	margin-left: 2px;
 }

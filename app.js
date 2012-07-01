@@ -24,7 +24,7 @@ parser.on('article', function (article){
 	var date = moment(JSON.stringify(article.pubDate), "YYYY-MM-DDTHH:mm.ss.SSSZ");
 
 	homeViewModel.twitterFeed.push([date.format("dddd, MMMM Do YYYY"),
-		JSON.stringify(article.title.replace("Custom_Creams: ","")]);
+		JSON.stringify(article.title.replace("Custom_Creams: ",""))]);
     });
 
 

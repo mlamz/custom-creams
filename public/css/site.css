@@ -118,6 +118,9 @@ b{
 	padding: 10px !important;
 	line-height: 1.4em;
 }
+.twitter-box hr{
+	margin-top: 6px;
+}
 .twitter-box-date{
 	font-weight: bold;
 }

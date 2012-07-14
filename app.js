@@ -6,6 +6,7 @@ var express = require('express')
 ,	moment = require('moment')
 ,	twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' }
 ,	homeViewModel = { twitterFeed: [] }
+,	twiterTextLinkifier = require('./lib/twitterTextLinkifier')
 ;
 
 var app = express.createServer();
@@ -21,11 +22,15 @@ app.configure(function() {
 
 
 parser.on('article', function (article){
-	if (homeViewModel.twitterFeed.length < 8){
-		var date = moment(JSON.stringify(article.pubDate), "YYYY-MM-DDTHH:mm.ss.SSSZ");
+	var date
+	,	tweet
+	;
 
-		homeViewModel.twitterFeed.push([date.format("dddd, MMMM Do YYYY"),
-			JSON.stringify(article.title.replace("Custom_Creams: ",""))]);
+	if (homeViewModel.twitterFeed.length < 8){
+		date = moment(JSON.stringify(article.pubDate), "YYYY-MM-DDTHH:mm.ss.SSSZ").format("dddd, MMMM Do YYYY");
+		tweet = twiterTextLinkifier.linkify(JSON.stringify(article.title.replace("Custom_Creams: ","")));
+
+		homeViewModel.twitterFeed.push([date,tweet]);
 	}
 });
 

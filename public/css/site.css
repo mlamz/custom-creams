@@ -8,6 +8,7 @@ body{
 	font-size: 1.1em;
 	font-family: Georgia, Verdana, Helvetica;
 	margin: 0;
+	line-height: 1.8em;
 }
 
 #page{
@@ -115,6 +116,7 @@ b{
 	z-index: 50;
 	border: solid 4px #ffffff !important;
 	padding: 10px !important;
+	line-height: 1.4em;
 }
 .twitter-box-date{
 	font-weight: bold;

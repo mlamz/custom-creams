@@ -7,6 +7,7 @@ var express = require('express')
 ,	twitterRssFeed = { uri: 'http://api.twitter.com/1/statuses/user_timeline.rss?screen_name=custom_creams' }
 ,	homeViewModel = { twitterFeed: [] }
 ,	twiterTextLinkifier = require('./lib/twitterTextLinkifier')
+,	numberOfTweetsToShow = 7
 ;
 
 var app = express.createServer();
@@ -26,7 +27,7 @@ parser.on('article', function (article){
 	,	tweet
 	;
 
-	if (homeViewModel.twitterFeed.length < 8){
+	if (homeViewModel.twitterFeed.length < numberOfTweetsToShow){
 		date = moment(JSON.stringify(article.pubDate), "YYYY-MM-DDTHH:mm.ss.SSSZ").format("dddd, MMMM Do YYYY");
 		tweet = twiterTextLinkifier.linkify(JSON.stringify(article.title.replace("Custom_Creams: ","")));
 

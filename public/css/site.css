@@ -21,7 +21,7 @@ body{
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	position: relative;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
 	font-size: 0.9em;
 	line-height: 1.5em;
 }
@@ -142,7 +142,7 @@ b{
 	margin-bottom:15px;
 }
 .intro-box{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
 	width: 380px;
 	float:left;
 	padding-right: 32px;
@@ -160,7 +160,7 @@ h1{
 	margin-bottom: 5px;
 }
 h1,h2,h3,h4,h5{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
 }
 h3{
 	font-size: 1.3em;
@@ -198,7 +198,7 @@ hr {
 	font-weight: 100;
 }
 .nav{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
 }
 .highlight{
 	border-bottom: 1px #009ade dashed;

@@ -180,6 +180,20 @@ b{
 	margin-left: 50px;
 	margin-top: 20px;
 }
+.nitrogen-bar-line-drawing-box{
+	height: 350px;
+	width: 450px;
+	background-image: url('../images/nitrogen-bar-line-drawing.png');
+	margin-left: 0px;
+	margin-top: 0px;
+}
+.our-story-scene-box{
+	height: 400px;
+	width: 300px;
+	background-image: url('../images/our-story-scene.jpg');
+	margin-left: 38px;
+	margin-top: 20px;
+}
 .box{
 	border: solid 6px #ffffff;
 	padding: 5px;

@@ -142,8 +142,15 @@ b{
 	margin-top: 13px;
 }
 .hire-us-box{
-	height: 400px;
-	background-image: url('../images/hire-us-image.jpg')
+	height: 250px;
+	width: 340px;
+	background-image: url('../images/hire-us-1.jpg');
+	margin-right: 10px;
+}
+.hire-us-box2{
+	height: 250px;
+	width: 340px;
+	background-image: url('../images/hire-us-2.jpg')
 }
 .box{
 	border: solid 6px #ffffff;

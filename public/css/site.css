@@ -239,3 +239,9 @@ margin: 10px;
 -moz-background-size: 100px 100px;
 background-size: 100px 100px;
 }
+.twitter-icon{
+	padding-right: 5px;
+}
+.twitter-follow{
+	font-size: 0.9em;
+}

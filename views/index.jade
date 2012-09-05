@@ -31,7 +31,12 @@ div.intro-box
 	div.clear
 
 div.twitter-box.box
-	h4 Our tweets
+	div.left.twitter-icon
+		img(src='images/twitter.png')
+	div.left
+		h4 Our tweets
+		a.twitter-follow(href='http://twitter.com/intent/user?screen_name=custom_creams',target='_blank') &raquo; Click here to follow us on Twitter!
+	div.clear
 	hr
 	- for (var i = 0; i < twitterFeed.length; i++) {
 		p

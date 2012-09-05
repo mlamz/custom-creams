@@ -17,12 +17,17 @@ $(document).ready(function(){
 			//$("#blue-burst").addClass("blue-burst-flavours");
 			break;
 		case '/hire-us':
-			$("ul.nav-buttons li a:eq(3)").addClass("highlight");
+			$("ul.nav-buttons li a:eq(4)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-hire-us");
 			break;
 		case '/sponsors':
-			$("ul.nav-buttons li a:eq(4)").addClass("highlight");
+			$("ul.nav-buttons li a:eq(5)").addClass("highlight");
+
+			//$("#blue-burst").addClass("blue-burst-sponsors");
+			break;
+		case '/nitrogen-bar':
+			$("ul.nav-buttons li a:eq(3)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-sponsors");
 			break;

@@ -50,6 +50,10 @@ app.get('/our-story', function(req, res){
 app.get('/flavours', function(req, res){
 		res.render("flavours");
 	});
+app.get('/nitrogen-bar', function(req, res){
+		res.render("nitrogen-bar");
+	});
+
 
 app.get('/hire-us', function(req, res){
 		res.render("hire-us");

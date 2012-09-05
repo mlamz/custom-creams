@@ -152,6 +152,34 @@ b{
 	width: 340px;
 	background-image: url('../images/hire-us-2.jpg')
 }
+.flavour-box1{
+	height: 200px;
+	width: 280px;
+	background-image: url('../images/flavours/double-espresso.jpg');
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.flavour-box4{
+	height: 200px;
+	width: 280px;
+	background-image: url('../images/flavours/green-tea.jpg');
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.flavour-box3{
+	height: 200px;
+	width: 280px;
+	background-image: url('../images/flavours/japanese-black-sesame.jpg');
+	margin-left: 50px;
+	margin-top: 20px;
+}
+.flavour-box2{
+	height: 200px;
+	width: 280px;
+	background-image: url('../images/flavours/pistachio.jpg');
+	margin-left: 50px;
+	margin-top: 20px;
+}
 .box{
 	border: solid 6px #ffffff;
 	padding: 5px;
@@ -261,4 +289,12 @@ background-size: 100px 100px;
 .large-col{
 	width: 505px;
 	padding-right: 19px;
+}
+.med-col{
+	width: 370px;
+}
+.flavour-desc{
+	margin-left: 55px;
+	margin-top: -10px;
+	font-style: italic;
 }

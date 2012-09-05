@@ -1,5 +1,5 @@
 var express = require('express')
-,	port = process.env.PORT || 3000
+,	port = process.env.PORT || 3001
 ,	FeedParser = require('feedparser')
 ,	parser = new FeedParser()
 ,	request = require('request')
@@ -38,9 +38,9 @@ parser.on('article', function (article){
 
 app.get('/', function(req, res){
 	homeViewModel.twitterFeed = [];
-	request(twitterRssFeed, function(error, twitterResponse, body){
+	//request(twitterRssFeed, function(error, twitterResponse, body){
 		res.render("index", homeViewModel);
-	}).pipe(parser.stream);
+	//}).pipe(parser.stream);
 });
 
 app.get('/our-story', function(req, res){

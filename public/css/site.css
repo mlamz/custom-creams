@@ -1,14 +1,20 @@
 body{
-	background-image:
+/*	background-image:
 		-webkit-gradient(linear, left top, right top,
 			color-stop(0.5, #232227),
 			color-stop(0.5, #efefe7));
+	background-image:
+		-moz-linear-gradient(linear, left top, right top,
+			color-stop(0.5, #232227),
+			color-stop(0.5, #efefe7));*/
+	background-size: 100px 100px;
 	-webkit-background-size: 100px 100px;
 	--font-family: Verdana, Helvetica;
 	font-size: 1.1em;
 	font-family: Georgia, Verdana, Helvetica;
 	margin: 0;
 	line-height: 1.8em;
+	text-align: center;
 }
 
 #page{
@@ -218,4 +224,19 @@ hr {
 }
 .sponsor-body{
 	width: 500px;
+}
+.vertical {
+background-color: #232227;
+background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, rgba(239, 239, 231, 1)), color-stop(.5, transparent), to(transparent));
+background-image: -webkit-linear-gradient(0deg, rgba(239, 239, 231, 1) 50%, transparent 50%, transparent);
+background-image: -moz-linear-gradient(0deg, rgba(239, 239, 231, 1) 50%, transparent 50%, transparent);
+background-image: -ms-linear-gradient(0deg, rgba(239, 239, 231, 1) 50%, transparent 50%, transparent);
+background-image: -o-linear-gradient(0deg, rgba(239, 239, 231, 1) 50%, transparent 50%, transparent);
+background-image: linear-gradient(0deg, rgba(239, 239, 231, 1) 50%, transparent 50%, transparent);
+}
+.stripes {
+margin: 10px;
+-webkit-background-size: 100px 100px;
+-moz-background-size: 100px 100px;
+background-size: 100px 100px;
 }

@@ -9,7 +9,7 @@ body{
 			color-stop(0.5, #efefe7));*/
 	background-size: 100px 100px;
 	-webkit-background-size: 100px 100px;
-	--font-family: Verdana, Helvetica;
+	--font-family: Arial, Verdana, Helvetica;
 	font-size: 1.1em;
 	font-family: Georgia, Verdana, Helvetica;
 	margin: 0;
@@ -26,7 +26,7 @@ body{
 	-moz-border-radius: 15px;
 	border-radius: 15px;
 	position: relative;
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
+	font-family: Arial;
 	font-size: 0.9em;
 	line-height: 1.5em;
 }
@@ -203,7 +203,7 @@ b{
 	margin-bottom:15px;
 }
 .intro-box{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
+	font-family: Arial;
 	width: 380px;
 	float:left;
 	padding-right: 32px;
@@ -221,7 +221,7 @@ h1{
 	margin-bottom: 5px;
 }
 h1,h2,h3,h4,h5{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
+	font-family: Arial;
 }
 h3{
 	font-size: 1.3em;
@@ -259,7 +259,7 @@ hr {
 	font-weight: 100;
 }
 .nav{
-	font-family: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, sans-serif;
+	font-family: Arial;
 }
 .highlight{
 	border-bottom: 1px #999999 solid;

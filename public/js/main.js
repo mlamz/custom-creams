@@ -33,6 +33,33 @@ $(document).ready(function(){
 			break;
 		default:
 			break;
-	}
+	};
+
+	var ytplayer;
+
+	var params = { allowScriptAccess: "always" };
+    var atts = { id: 'ytapiplayer' };
+    swfobject.embedSWF("http://www.youtube.com/v/oHjHTaS3k_s?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "640", "360", "8", null, null, params, atts);
+
+    function onYouTubePlayerReady(playerId) {
+      
+    }
+
+ 
+
+    function play() {
+    	console.log("ytplayer", ytplayer);
+      if (ytplayer) {
+        ytplayer.playVideo();
+      }
+    }
+
+
+	$(".video-box").click(function(){
+		ytplayer = document.getElementById("ytapiplayer");
+		play();
+	});
+
+
 	
 });

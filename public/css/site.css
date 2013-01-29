@@ -133,7 +133,8 @@ b{
 	height: 470px;
 	margin-top: -10px;
 	z-index: 50;
-	background-image: url('../images/home-image.jpg')
+	background-image: url('../images/home-image.jpg');
+	cursor: pointer;
 }
 .nitrogen-bar-box{
 	height: 250px;
@@ -311,4 +312,16 @@ background-size: 100px 100px;
 	margin-left: 55px;
 	margin-top: -10px;
 	font-style: italic;
+}
+.play-button{
+
+}
+.play-button-container{
+	margin-left: 265px;
+	margin-top: 140px;
+	width:190px;
+
+}
+.youtube-video{
+	
 }

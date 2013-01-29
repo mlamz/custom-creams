@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	console.log(window.location);
+	
 
 	switch(window.location.pathname){
 		case '/':
@@ -37,27 +37,36 @@ $(document).ready(function(){
 
 	var ytplayer;
 
+	
 	var params = { allowScriptAccess: "always" };
     var atts = { id: 'ytapiplayer' };
-    swfobject.embedSWF("http://www.youtube.com/v/oHjHTaS3k_s?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "640", "360", "8", null, null, params, atts);
+    swfobject.embedSWF("http://www.youtube.com/v/oHjHTaS3k_s?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "1", "1", "8", null, null, params, atts);
 
-    function onYouTubePlayerReady(playerId) {
-      
-    }
 
- 
 
     function play() {
     	console.log("ytplayer", ytplayer);
       if (ytplayer) {
         ytplayer.playVideo();
+        console.log(ytplayer);
       }
     }
 
 
 	$(".video-box").click(function(){
-		ytplayer = document.getElementById("ytapiplayer");
-		play();
+		$('#flash-message').show();
+		$(this).css( { 'background-color':'Black'});
+		$(this).css('background-image', 'none');
+
+		console.log($(this));
+
+		$('#ytapiplayer').attr('width','720');
+		$('#ytapiplayer').attr('height','470');
+			ytplayer = document.getElementById("ytapiplayer");
+
+			play();
+		
+		
 	});
 
 

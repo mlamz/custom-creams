@@ -318,10 +318,16 @@ background-size: 100px 100px;
 }
 .play-button-container{
 	margin-left: 265px;
-	margin-top: 140px;
+	margin-top: 120px;
 	width:190px;
 
 }
-.youtube-video{
-	
+#ytapiplayer{
+	position: absolute;
+	top: 198px;
+	margin-left: 10px;
+}
+#flash-message{
+	display: none;
+	color: White;
 }

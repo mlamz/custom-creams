@@ -35,39 +35,6 @@ $(document).ready(function(){
 			break;
 	};
 
-	// var ytplayer;
-
-	
-	// var params = { allowScriptAccess: "always" };
- //    var atts = { id: 'ytapiplayer' };
- //    swfobject.embedSWF("http://www.youtube.com/v/oHjHTaS3k_s?enablejsapi=1&playerapiid=ytplayer&version=3", "ytapiplayer", "1", "1", "8", null, null, params, atts);
-
-
-
- //    function play() {
- //    	console.log("ytplayer", ytplayer);
- //      if (ytplayer) {
- //        ytplayer.playVideo();
- //        console.log(ytplayer);
- //      }
- //    }
-
-
-	// $(".video-box").click(function(){
-	// 	$('#flash-message').show();
-	// 	$(this).css( { 'background-color':'Black'});
-	// 	$(this).css('background-image', 'none');
-
-	// 	console.log($(this));
-
-	// 	$('#ytapiplayer').attr('width','720');
-	// 	$('#ytapiplayer').attr('height','470');
-	// 		ytplayer = document.getElementById("ytapiplayer");
-
-	// 		play();
-		
-		
-	// });
 	var tag = document.createElement('script');
 
       tag.src = "//www.youtube.com/iframe_api";
@@ -79,12 +46,10 @@ $(document).ready(function(){
       function onPlayerReady(event) {
       	$('#player').attr('width','720');
 	 	$('#player').attr('height','470');
+
         event.target.playVideo();
       }
 
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
       var done = false;
       function onPlayerStateChange(event) {
         if (event.data == YT.PlayerState.PLAYING && !done) {
@@ -104,6 +69,7 @@ $(document).ready(function(){
 		console.log($(this));
 
 		player = new YT.Player('player', {
+
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange

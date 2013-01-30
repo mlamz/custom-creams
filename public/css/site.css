@@ -318,11 +318,11 @@ background-size: 100px 100px;
 }
 .play-button-container{
 	margin-left: 265px;
-	margin-top: 120px;
+	margin-top: 140px;
 	width:190px;
 
 }
-#ytapiplayer{
+#player{
 	position: absolute;
 	top: 198px;
 	margin-left: 10px;

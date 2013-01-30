@@ -129,6 +129,23 @@ b{
 .twitter-box-date{
 	font-weight: bold;
 }
+.facebook-box{
+	font-size: 0.8em;
+	width: 300px;
+	float:left;
+	background-color: rgba(239,239,231,0.6);
+	z-index: 50;
+	border: solid 4px #ffffff !important;
+	padding: 10px !important;
+	line-height: 1.4em;
+}
+.facebook-box hr{
+	margin-top: 6px;
+}
+.fb-like{
+	padding-top:10px;
+}
+
 .video-box{
 	height: 470px;
 	margin-top: -10px;
@@ -297,6 +314,13 @@ background-size: 100px 100px;
 }
 .twitter-icon{
 	padding-right: 5px;
+}
+.facebook-icon img{
+	width: 24px;
+	padding-right: 12px;
+}
+.facebook-heading h4{
+	padding-top:3px;
 }
 .twitter-follow{
 	font-size: 0.9em;

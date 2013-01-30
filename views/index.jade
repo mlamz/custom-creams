@@ -1,3 +1,14 @@
+#fb-root
+	script
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=393763210706362";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+
 div.video-box.box
 	div.play-button-container
 		div.play-button
@@ -32,6 +43,15 @@ div.intro-box
 	div.left
 		span 07889 159378
 	div.clear
+
+div.facebook-box.box
+	div.left.facebook-icon
+		img(src='images/facebook.png')
+	div.left.facebook-heading
+		h4 Like Us
+	div.clear
+	hr
+	.fb-like(data-send='false', data-layout='standard', data-width='450', data-show-faces='false', data-colorscheme='light', data-action='like')
 
 div.twitter-box.box
 	div.left.twitter-icon

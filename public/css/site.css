@@ -170,6 +170,19 @@ b{
 	width: 340px;
 	background-image: url('../images/hire-us-2.jpg')
 }
+.hire-us-box3{
+	height: 250px;
+	width: 188px;
+	background-image: url('../images/hire-us-3.jpg');
+	margin-right: 50px;
+	margin-left: 60px;
+}
+.hire-us-box4{
+	height: 250px;
+	width: 333px;
+	background-image: url('../images/hire-us-4.jpg')
+}
+
 .flavour-box1{
 	height: 200px;
 	width: 280px;

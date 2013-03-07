@@ -43,8 +43,8 @@ app.get('/', function(req, res){
 	}).pipe(parser.stream);
 });
 
-app.get('/our-story', function(req, res){
-		res.render("our-story");
+app.get('/our-mission', function(req, res){
+		res.render("our-mission");
 	});
 
 app.get('/flavours', function(req, res){

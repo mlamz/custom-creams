@@ -42,7 +42,7 @@ body{
 	clear:both;
 }
 ul, li {
-    list-style-type: square;
+    list-style-type: none;
 }
 ul.nav-buttons{
 	margin-top: 130px;

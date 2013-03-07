@@ -47,8 +47,8 @@ app.get('/our-mission', function(req, res){
 		res.render("our-mission");
 	});
 
-app.get('/flavours', function(req, res){
-		res.render("flavours");
+app.get('/ingredients', function(req, res){
+		res.render("ingredients");
 	});
 app.get('/the-cryomixer', function(req, res){
 		res.render("the-cryomixer");

@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 			//$("#blue-burst").addClass("blue-burst-our-story");
 			break;
-		case '/flavours':
+		case '/ingredients':
 			$("ul.nav-buttons li a:eq(2)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-flavours");
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 			//$("#blue-burst").addClass("blue-burst-sponsors");
 			break;
-		case '/the-cryomioxer':
+		case '/the-cryomixer':
 			$("ul.nav-buttons li a:eq(3)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-sponsors");

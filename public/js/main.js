@@ -6,7 +6,7 @@ $(document).ready(function(){
 			//$("#blue-burst").addClass("blue-burst-home");
 			$("ul.nav-buttons li a:eq(0)").addClass("highlight");
 			break;
-		case '/our-story':
+		case '/our-mission':
 			$("ul.nav-buttons li a:eq(1)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-our-story");
@@ -26,7 +26,7 @@ $(document).ready(function(){
 
 			//$("#blue-burst").addClass("blue-burst-sponsors");
 			break;
-		case '/nitrogen-bar':
+		case '/the-cryomioxer':
 			$("ul.nav-buttons li a:eq(3)").addClass("highlight");
 
 			//$("#blue-burst").addClass("blue-burst-sponsors");

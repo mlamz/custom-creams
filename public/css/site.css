@@ -42,7 +42,7 @@ body{
 	clear:both;
 }
 ul, li {
-    list-style-type: none;
+    list-style-type: square;
 }
 ul.nav-buttons{
 	margin-top: 130px;
@@ -154,10 +154,11 @@ b{
 	cursor: pointer;
 }
 .nitrogen-bar-box{
-	height: 250px;
-	width: 190px;
-	background-image: url('../images/nitrogen-bar.jpg');
+	height: 350px;
+	width: 700px;
+	background-image: url('../images/cryomixer.jpg');
 	margin-top: 13px;
+	margin-left: 10px;
 }
 .hire-us-box{
 	height: 250px;

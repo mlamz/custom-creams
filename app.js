@@ -50,8 +50,8 @@ app.get('/our-mission', function(req, res){
 app.get('/flavours', function(req, res){
 		res.render("flavours");
 	});
-app.get('/nitrogen-bar', function(req, res){
-		res.render("nitrogen-bar");
+app.get('/the-cryomixer', function(req, res){
+		res.render("the-cryomixer");
 	});
 
 
